@@ -79,14 +79,11 @@ h3 {
     background-image: linear-gradient(to right, #500c7a, #9f2e87);
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
-}#about {
-    background-color: #540d36;
-    min-height: 462px;
-    text-align: left;
-
 }
 .container {
     background-color: #fff6ec;
     width: 1024px;
     height: 631px;
+    margin: 240px auto;
+    padding: 50px 50px;
 }
