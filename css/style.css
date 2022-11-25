@@ -1,108 +1,467 @@
-@import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Syne:wght@400;700&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Syne:wght@400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
 }
+
 body {
     font-family: 'Syne', sans-serif;
     font-size: 18px;
+    font-weight: 100;
 }
-h2, h3 {
-    font-family: 'Germania One', cursive;
-}
+
 h2 {
-    font-size: 60px;
     color: #fff;
+    font-family: 'Germania One', cursive;
+    font-size: 60px;
+    font-weight: 100;
 }
+
 h3 {
-    font-size: 48px;
     color: #323131;
+    font-family: 'Germania One', cursive;
+    font-size: 48px;
+    font-weight: 100;
 }
+
 #top {
     background-image: url(../assets/top-background.png);
     background-position: center;
     background-size: cover;
-    min-height: 900px;
+    min-height: 692px;
     position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.bar {
-    background: #500c7a;
-}
-.navbar {
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    width: 100%;
-    transition: all 0.3s ease-in-out;
-}
 
 #nav {
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
-    z-index: 10;
+    z-index: 5;
 }
-.nav-wrapper {
+
+.nav-container {
     width: 90%;
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
-}
-.nav-wrapper .logo{
-    max-width: 110px;
+    padding:30px 0;
 }
 
-.nav-wrapper .logo img{
-    display: block;
-    width: 100%;
-}
-
-.menu {
+.nav-text {
     display: flex;
     align-items: center;
 }
-.menu a {
+
+.nav-text a {
+    position: relative;
+    display: inline-block;
     color: #fff;
     text-decoration: none;
+    overflow: hidden;
     margin-left: 30px;
+    transition: 0.2s;
 }
-.top-content {
+a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    text-decoration: none;
+}
+.nav-text a:hover {
+    color: #fff;
+    background-color: #9f2f87;
+    box-shadow: 0 0 10px #500c7a, 0 0 40px #500c7a, 0 0 80px #500c7a;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.top-text {
     width: 50%;
     color: #fff;
+    padding-right: 50px;
 }
-.button-group {
+
+.top-text p {
+    margin-right: 30%;
+    font-size: 18px;
+}
+
+.button {
     display: flex;
-    margin-top: 40px;
+    margin-top: 48px;
 }
-.button-group a{
+
+.button a {
     color: #fff;
     display: flex;
     padding: 20px 75px;
 }
-.button-group .explore {
+
+.button .explore2 {
     text-decoration: none;
     text-transform: uppercase;
-    background-image: linear-gradient(to right, #500c7a, #9f2e87);
+    display: inline-block;
+    background-image: linear-gradient(to right, #500c7a, #9f2f87);
+    overflow: hidden;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    transition: 0.2s;
 }
-#about {
-    background-color: #540d36;
-    display: flex;
+.button .explore2:hover {
+    color: #fff;
+    background-image: linear-gradient(to right, #500c7a, #9f2f87);
+    box-shadow: 0 0 10px #500c7a, 0 0 40px #500c7a, 0 0 80px #500c7a;
+}
+#mid {
+    background-image: url(../assets/Mid_background.png);
+    background-repeat: no-repeat, no-repeat;
+    max-height: 461px;
     width: 100%;
-    height: 461px;
-    margin-top: -10px;
+    background-size: cover;
 }
-.container {
+
+.logo2 {
+    text-align: center;
+    padding-top: 139px;
+    padding-bottom: 41px;
+}
+
+.about-content .floating-island {
+    position: absolute;
+    top: -112px;
+    right: -37px;
+    size: 100%;
+}
+
+.about-content {
     background-color: #fff6ec;
-    width: 1024px;
-    height: 631px;
-    margin: 240px auto;
-    padding: 50px 50px;
+    max-height: 632px;
+    max-width: 1024px;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 68px;
+}
+
+.about-content h3 {
+    padding: 44px 328px 18px 54px;
+}
+
+.about-content .p1 {
+    margin-left: 51px;
+}
+
+.about-content .dices {
+    position: absolute;
+    right: 25px;
+    bottom: 35px;
+}
+
+.border {
+    border-left: 5px solid #d9c1a4;
+    margin-left: 51px;
+}
+
+.border p {
+    padding-left: 26px;
+}
+
+.about-content p {
+    margin-right: 90px;
+}
+
+#campaign h3 {
+    padding-top: 506px;
+    text-align: center;
+    position: relative;
+    color: #323131;
+}
+.slider {
+    width: 80%;
+}
+
+.slide-wrapper {
+    margin-top: 45px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gradient {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.slide-card {
+    width: 30%;
+    border: solid 3px #500c7a;
+    background: #fff;
+    height: 533px;
+    position: relative;
+}
+
+.slide-card a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#arkemyr {
+    background-image: url(../assets/Castle_background.jpg);
+    background-position: 35% 50%;
+    background-size: cover;
+}
+
+#burning-tale {
+    background-image: url(../assets/feywild.jpg);
+    background-position: 60% 50%;
+    background-size: cover;
+}
+
+#leviathan {
+    background-image: url(../assets/pirate_Background.jpg);
+    background-position: 60% 50%;
+    background-size: cover;
+}
+
+#doa {
+    background-image: url(../assets/tavern_Background.jpg);
+    background-position: 20% 50%;
+    background-size: cover;
+}
+
+.slide-card .campaign-logo img {
+    display: block;
+    width: 100%;
+}
+
+.campaign-logo {
+    bottom: 30px;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+#arkemyr.campaign-logo {
+    bottom: 45px;
+    padding: 10px 25px;
+}
+
+#burning-tale .campaign-logo img {
+    max-width: 350px;
+}
+
+#leviathan .campaign-logo img {
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+#doa .campaign-logo img {
+    max-width: 231px;
+}
+
+.campaign-slide-nav {
+    margin-top: 25px;
+    font-size: 24px;
+    color: #500c7a;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 145px;
+}
+
+.campaign-slide-nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+.campaign-slide-nav a:hover {
+    background-color: #500c7a;
+    color: #fff
+}
+
+.previous {
+    background-color: #ffffff00;
+    color: #500c7a;
+    border: solid 2px #500c7a;
+}
+
+.next {
+    background-color: #ffffff00;
+    color: #500c7a;
+    border: solid 2px #500c7a;
+    margin-left: -2px;
+}
+
+#newsletter {
+    text-align: center;
+    padding: 55px;
+    background: #efefef;
+    position: relative;
+    margin: 115px 0 50px;
+}
+
+#newsletter::after {
+    content: '';
+    background-image: url(../assets/shelves_background.png);
+    background-position: 50% 70%;
+    opacity: 0.07;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.newsletter-content {
+    max-width: 770px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+}
+
+.newsletter-content h3 {
+    color: #500c7a;
+}
+
+.newsletter-content p {
+    margin: 20px 0;
+}
+
+.newsletter-content form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsletter-content input {
+    width: 89%;
+    border: solid 2px #500c7a;
+    padding: 15px;
+}
+
+.newsletter-content input::placeholder {
+    color: #a996b2;
+    font-family: 'Syne', sans-serif;
+}
+
+.newsletter-content button {
+    width: 10%;
+    background-image: linear-gradient(to right, #500c7a, #9f2f87);
+    border: none;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+
+.newsletter-content button:hover {
+    color: #fff;
+    background-image: linear-gradient(to right, #500c7a, #9f2f87);
+    box-shadow: 0 0 10px #500c7a, 0 0 40px #500c7a, 0 0 80px #500c7a;
+}
+
+#attribution {
+    background: #500c7a;
+    color: #fff;
+    padding: 40px 0;
+}
+
+#attribution a {
+    color: #000;
+    background: #febf46;
+    text-decoration: none;
+}
+
+#attribution a:hover {
+    color: #fff;
+    background: #da6d14;
+}
+
+@media only screen and (max-width: 1440px) {}
+@media only screen and (max-width: 768px) {
+    #top {
+        padding: 0;
+    }
+    .nav {
+        width: 90%;
+    }
+    .about-content p {
+        font-size: 14px;
+        line-height: 15px;
+    }}
+@media only screen and (max-width: 320px) {
+    body {
+        font-size: 11px;
+    }
+    h3 {
+        font-size: 17px;
+    }
+    .float-img {
+        display: none;
+    }
+    #mid {
+        padding-top: 50px;
+    }
+    .about-content p {
+        font-size: 11px;
+        line-height: 10px;
+    }
+    .about-content h3 {
+        margin-bottom: 15px;
+    }
+    .about-content blockquote {
+        margin: 10px 0;
+        border-left: none;
+        border-top: solid 4px #d9c1a4;
+        background: #fff;
+        padding: 10px;
+    }
+    #campaign {
+        margin-top: 50px;
+    }
+    .campaign-slide {
+        margin-top: 20px;
+    }
+    #newsletter {
+        margin-top: 50px;
+    }
+    #newsletter form {
+        display: block;
+    }
+    #newsletter input {
+        width: 100%;
+    }
+    #newsletter button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px 0;
+    }
 }

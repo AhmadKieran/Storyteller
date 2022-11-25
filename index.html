@@ -1,70 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Story Teller</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
     <div id="top">
-        <div class="navbar bar">
-            <div id="nav">
-                <div class="nav-wrapper">            
-                    <div class="logo">
-                        <a href="/">
-                            <img src="assets/logo.png" alt="StoryTeller">
-                        </a>
-                    </div>
-                    <div class="menu">            
-                            <a href="#about">about</a>
-                            <a href="#campaigns">campaigns</a>
-                            <a href="#attributions">attributions</a>
-                    </div>
+        <div id="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="/">
+                        <img src="/Storyteller/assets/logo.png" alt=""></a>
+                </div>
+                <div class="nav-text">
+                    <a href="#about">About</a>
+                    <a href="#campaign">Campaign</a>
+                    <a href="#attributions">Attributions</a>
                 </div>
             </div>
         </div>
-        <div class="top-content">
-            <h2>Find Your<br>
+        <div class="top-text">
+            <h2>Find Your <br>
                 Legendary Journey</h2>
             <p>Pick your favorite TTRPG campaign, roll a character and delve into terra incognita</p>
-            <div class="button-group">
-                <a href="#campaign" class="explore">Explore</a>
-                <a href="#about">Learn More</a>
+            <div class="button">
+                <a href="#campaign" class="explore2">Explore</a>
+                <a href="about" >Learn More</a>
             </div>
         </div>
     </div>
-    <div id="about">
-         <div class="container">
-            <h3>Welcome Adventurer</h3>
-             <p>StoryTeller is a grimoire of of TTRPG campaigns. “But what’s a TTRPG ?” you might ask, well here’s a whole paragraph we took from wikipedia:</p>
-             <br>
-            <div class="paragraph">
-                <p>A tabletop role-playing game (typically abbreviated as TRPG or TTRPG), also known as a pen-and-paper role-playing game, is a form of role-playing game (RPG) in which the participants describe their characters' actions through speech. Participants determine the actions of their characters based on their characterization, and the actions succeed or fail according to a set formal system of rules and guidelines. Within the rules, players have the freedom to improvise; their choices shape the direction and outcome of the game.</p>
-                <p>The terms pen-and-paper and tabletop are generally only used to distinguish this format of RPG from other formats, since neither pen and paper nor a table are strictly necessary</p>
-                <p>Dungeons & Dragons? Pathfinder? The Call of Cthulhu? We have it all! Wanna be a pirate and plunder bounties? Wizards that keep casting fireballs even though it’s a close quarter combat then died from a 1d4 damage? A rogue with traumatic childhood or a bard who keep trying to seduce the dragon? Go browse the whole compendium and start your journey!</p>
-            </div>
-         </div>
     </div>
-    <!--<div id="campaign">
-        <div class="container">
-            <h3>Campaign</h3>
-            <div class="slider">
-                <div class="slider-card" id="arkemyr">
+    <div id="mid">
+        <div class="logo2">
+            <a href="">
+                <img src="/Storyteller/assets/logo2.png" alt=""></a>
+        </div>
+        <div class="about-content">
+            <div class="floating-island">
+                <a href="">
+                    <img src="/Storyteller/assets/floating island.png" alt="" class="float-img"></a>
+            </div>
+            <h3>Welcome Adventurer!</h3>
+            <div class="p1">
+                <p>StoryTeller is a grimoire of of TTRPG campaigns. “But what’s a TTRPG ?” you might ask, well here’s a
+                    whole paragraph we took from wikipedia:</p>
+            </div>
+            <br>
+            <div class="border">
+                <p>A <strong>tabletop role-playing game</strong>(typically abbreviated as <strong>TRPG</strong> or
+                    <strong>TTRPG</strong>), also known as a <strong>pen-and-paper role-playing game</strong>, is a form
+                    of role-playing game (RPG) in which the participants describe their characters' actions through
+                    speech. Participants determine the actions of their characters based on their characterization, and
+                    the actions succeed or fail according to a set formal system of rules and guidelines. Within the
+                    rules, players have the freedom to improvise; their choices shape the direction and outcome of the
+                    game. <br>
+                    <br>
+                    The terms pen-and-paper and tabletop are generally only used to distinguish this format of RPG from
+                    other formats, since neither pen and paper nor a table are strictly necessary.
+                </p>
+            </div>
+            <br>
+            <div class="p1">
+                <p>Dungeons & Dragons? Pathfinder? The Call of Cthulhu? We have it all! Wanna be a pirate and plunder
+                    bounties? Wizards that keep casting fireballs even though it’s a close quarter combat then died from
+                    a 1d4 damage? A rogue with traumatic childhood or a bard who keep trying to seduce the dragon? Go
+                    browse the whole compendium and start your journey!
+                </p>
+            </div>
+            <div class="dices">
+                <a href="">
+                    <img src="/Storyteller/assets/dices.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div id="campaign">
+        <h3>&#9876;&#65039;Campaigns&#9876;&#65039;</h3>
+    </div>
+    <div class="swiper slider">
+        <div class="swiper-wrapper slide-wrapper">
+            <div id="arkemyr" class="swiper-slide slide-card">
+                <div class="gradient"></div>
+                <a href="">
+                    <span class="campaign-logo">
+                        <img src="/Storyteller/assets/judul_arkemyr.png" alt=""></a></span>
+            </div>
+            <div id="burning-tale" class="swiper-slide slide-card">
+                <div class="gradient"></div>
+                <a href="">
+                    <span class="campaign-logo">
+                        <img src="/Storyteller/assets/Burning-vale_judul.png" alt=""></a></span>
+            </div>
+            <div id="leviathan" class="swiper-slide slide-card">
+                <div class="gradient"></div>
+                <a href="">
+                    <span class="campaign-logo">
+                        <img src="/Storyteller/assets/Leviathan-odyssey_judul.png" alt=""></a></span>
+            </div>
+            <div id="doa" class="swiper-slide slide-card">
+                <div class="gradient"></div>
+                <a href="">
+                    <span class="campaign-logo">
+                        <img src="/Storyteller/assets/DA_judul.png" alt=""></a></span>
+            </div>
+        </div>
+    </div>
+    <div class="campaign-slide-nav">
+        <div class="slide-prev">
+            <a href="#" class="previous">&#8592;</a>
+        </div>
+        <div class="slide-next">
+            <a href="#" class="next">&#8594;</a>
+        </div>
+    </div>
+    <div id="newsletter">
+        <div class="newsletter-content">
+            <h3>Get regular updates from us!</h3>
+            <p>Enter your email below to get awesome updates about upcoming events, new campaigns and many more!</p>
+            <form action="">
+                <input type="text" placeholder="Email Address">
+                <button>join</button>
+            </form>
+        </div>
+    </div>
+    <div id="attribution">
+        <div class="newsletter-content">
+            Attributions: assets by <a href="https://www.freepik.com/author/dgim-studio">dgim-studio</a>, <a
+                href="https://www.freepik.com/author/upklyak">upklyak</a>, Dragon icons created by <a
+                href="https://www.flaticon.com/free-icons/dragon">Freepik - Flaticon</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>const swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
 
-                </div>
-                <div class="slider-card"></div>
-                <div class="slider-card"></div>
-                <div class="slider-card"></div>
-            </div>
-            <div class="slider-nav">
-                <div class="silde-prev"></div>
-                <div class="silde-next"></div>
-            </div>
-        </div>
-    </div>
-    
+            navigation: {
+                nextEl: '.next',
+                prevEl: '.previous',
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                600: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 45,
+                },
+            }
+            }
+            );</script>
 </body>
+
 </html>
